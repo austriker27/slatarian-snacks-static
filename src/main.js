@@ -19,9 +19,8 @@ new Vue({
 
   el: '#v-for-snacks',
   data: {
-    snacks: {
-      title: 'Gummy Bears',
-      description: 'There’s just something about our 12 flavors of gummy bears! We promise these are superb quality candies you won’t want to put down.Flavors include cherry, pink grapefruit, watermelon, strawberry, orange, blue raspberry, lime, grape, green apple, mango, pineapple and lemon.',
-    },
+    snacks: [
+      { title: 'Gummy Bears', description: 'There’s just something about our 12 flavors of gummy bears! We promise these are superb quality candies you won’t want to put down.Flavors include cherry, pink grapefruit, watermelon, strawberry, orange, blue raspberry, lime, grape, green apple, mango, pineapple and lemon.' },
+    ],
   },
 });

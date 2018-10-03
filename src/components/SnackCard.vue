@@ -7,7 +7,7 @@
       <div></div>
       <div class="w-1/3 flex flex-col p-4">
         <div class="text-indigo-darker font-bold font-sans text-xl mb-2">{{ snack.title }}</div>
-        <p class="text-indigo-darker text-sm font-sans">{{ snack.description }}</p>
+        <p class="text-indigo text-sm font-sans">{{ snack.description }}</p>
       </div>
       <div class="flex flex-col items-center content-center self-center align-middle p-4">
         <div class="">
