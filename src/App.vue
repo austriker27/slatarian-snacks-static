@@ -2,7 +2,8 @@
   <div id="app">
     <TopBanner/>
     <Hero/>
-    <SnackCard/>
+    <!-- <SnackCard/> -->
+    <SnackList />
   </div>
 </template>
 
@@ -10,36 +11,38 @@
 import '@/assets/styles/main.css';
 import Hero from './components/Hero';
 import TopBanner from './components/TopBanner';
-import SnackCard from './components/SnackCard';
-import { snacks as snackData } from '../data'
+// import SnackCard from './components/SnackCard';
+import SnackList from './components/SnackList';
+import { snacks as snackData } from './data';
 
 export default {
   name: 'App',
   components: {
     Hero,
     TopBanner,
-    SnackCard,
+    // SnackCard,
+    SnackList,
   },
   data: () => ({
-    snacks: []
-    }),
-    methods: {
-      filterSnacks: function() {
-        // STUB... will actually add filtering later
-        this.snacks = snackData
-      }
+    snacks: [],
+  }),
+  methods: {
+    filterSnacks() {
+      // STUB... will actually add filtering later
+      this.snacks = snackData;
     },
-    created: function() {
-      this.filterSnacks()
-    }
-}
+  },
+  created() {
+    this.filterSnacks();
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0 auto;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto;
 }
 </style>

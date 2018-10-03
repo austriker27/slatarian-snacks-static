@@ -1,4 +1,5 @@
-<template v-for="snack in snacks" id="v-for-snacks">
+<!-- <template v-for="snack in snacks" id="v-for-snacks"> -->
+<template>
   <div class="flex flex-row justify-between w-5/6">
     <div class="leading-normal shadow-lg bg-white rounded flex">
       <!-- <div class="h-48 w-48 flex-none bg-cover rounded-t text-center" style="background-image: url('https://nuts.com/images/auto/801x534/assets/8ba593eb1bec237d.jpg')" title="Gummy Bears">
