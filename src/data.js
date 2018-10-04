@@ -15,7 +15,7 @@ export const snacks = [
     datePublished: '2017-05-01',
     description:
       'The de facto roadmap for learning Angular 2. This tutorial series will teach you Angular 2\'s fundamental concepts paired with real world examples, descriptions, and screencasts.',
-    category: ['angular'],
+    category: ['nuts'],
   },
   {
     title: 'Building Real World, Production Quality Apps with React and Redux',
@@ -24,7 +24,7 @@ export const snacks = [
     datePublished: '2017-05-01',
     description:
       'While most tutorials online cover the basics of React, Redux, and other tools individually, the purpose of this tutorial is to cover all of them in a cohesive manner.',
-    category: ['react'],
+    category: ['driedFruit'],
   },
   {
     title: 'Learn to Build Modern Web Apps with AngularJS and Ruby on Rails',
@@ -32,7 +32,7 @@ export const snacks = [
     datePublished: '2017-05-01',
     description:
       'The goal of this tutorial is to guide you through the creation of a Reddit/Hacker News clone using Rails 4 and AngularJS. By completing this tutorial, you will gain a basic understanding of Rails and AngularJS, using Rails to build a JSON REST API that interacts with an AngularJS frontend.',
-    category: ['angular', 'ror'],
+    category: ['nuts', 'chocolates'],
   },
   {
     title: 'Tutorial: Intro To React',
@@ -40,7 +40,7 @@ export const snacks = [
     datePublished: '2017-04-11',
     description:
       'Today, we\'re going to build an interactive tic-tac-toe game. We will be learning how to build this game step by step throughout this tutorial.',
-    category: ['react'],
+    category: ['driedFruit'],
   },
   {
     title: 'Create Element Transitions with Vue.js',
@@ -48,7 +48,7 @@ export const snacks = [
     datePublished: '2017-04-10',
     description:
       'Vue.js (Vue) offers a simple way to transition between elements on the page, allowing for either simple transitions between CSS properties or complex animations (or both!). In this example I\'ll demonstrate the basics of Vue transitions by creating a menu-expand toggle button.',
-    category: ['vue'],
+    category: ['snacks'],
   },
   {
     title:
@@ -58,7 +58,7 @@ export const snacks = [
     datePublished: '2017-04-10',
     description:
       'I\'ll take readers — who are presumed to have some level of proficiency with JavaScript fundamentals and jQuery — on a journey through the world of VueJS as we build a clone of Twitter’s \'compose tweet\' component.',
-    category: ['vue'],
+    category: ['snacks'],
   },
   {
     title:
@@ -85,7 +85,7 @@ export const snacks = [
     datePublished: '2017-01-24',
     description:
       'When you\'ve completed this series you will have built a full-blown web application using React, and should have the tools needed to start building your own applications today.',
-    category: ['react'],
+    category: ['driedFruit'],
   },
   {
     title: 'Invent Your Own Computer Games with Python',
@@ -93,7 +93,7 @@ export const snacks = [
     datePublished: '2016-12-17',
     description:
       'Programming isn\'t hard. But it is hard to find learning materials that teach you to do interesting things with programming. This book will teach you how to program your own computer games. You\'ll learn a useful skill and have fun games to show for it!',
-    category: ['python'],
+    category: ['sweets'],
   },
   {
     title: 'Multi-Line Lambdas in Python',
@@ -102,7 +102,7 @@ export const snacks = [
     datePublished: '2016-10-01',
     description:
       'I love Python, but I am able to see plenty of faults with it. In this article, I attempt to provide a very roundabout way of working around one of those faults: the lack of multi-line lambdas.',
-    category: ['python'],
+    category: ['sweets'],
   },
   {
     title: 'React Tutorial: Cloning Yelp',
@@ -110,7 +110,7 @@ export const snacks = [
     datePublished: '2016-05-19',
     description:
       'This post will guide you through building a full React app, even with little to no experience in the framework. We\'re going build a Yelp clone in React',
-    category: ['react', 'node'],
+    category: ['driedFruit', 'node'],
   },
   {
     title: 'Learn Vuex by Building a Notes App',
@@ -118,7 +118,7 @@ export const snacks = [
     datePublished: '2016-04-20',
     description:
       'In this tutorial we\'ll be learning how to use Vuex in our VueJs projects by building a notes application. We\'ll briefly go over what Vuex is, when to use it, and how to structure your project for use with a Vuex application.',
-    category: ['vue'],
+    category: ['snacks'],
   },
   {
     title: 'Snake with Pygame',
@@ -126,7 +126,7 @@ export const snacks = [
     datePublished: '2016-03-21',
     description:
       'In this tutorial you will learn how to build the game snake.  The game is an arcade game and it has very simple logic, which is why it is an ideal example to demonstrate how to build games with Pygame.',
-    category: ['python'],
+    category: ['sweets'],
   },
   {
     title: 'A Guide For Building A React Redux CRUD App',
@@ -135,7 +135,7 @@ export const snacks = [
     datePublished: '2016-03-06',
     description:
       'In this blog I\'ll provide a general approach on how to build a Blog app that has 3 pages and show navigate between them. Further, I\'ll also establish a pattern for making async requests and handling four async states: \'loading\', \'success\', \'error\' and \'success-and-navigate\'.',
-    category: ['react'],
+    category: ['driedFruit'],
   },
   {
     title: 'Building Your Second React.js App',
@@ -144,7 +144,7 @@ export const snacks = [
     datePublished: '2016-01-30',
     description:
       'This is the second post in a series of tutorials on React.js. The first one took you through building a very simple profile page with the popular Javascript library. This time we\'ll introduce some more basic concepts: State, Event handlers, Component life cycles, React & API\'s',
-    category: ['react'],
+    category: ['driedFruit'],
   },
   {
     title: 'Build AirBnb with Ruby on Rails, Bootstrap, jQuery and PayPal',
@@ -153,7 +153,7 @@ export const snacks = [
     datePublished: '2015-12-08',
     description:
       'In this project, I will walk you through steps to develop app like AirBnb with core functionalities from scratch. ',
-    category: ['ror'],
+    category: ['chocolates'],
   },
   {
     title:
@@ -162,7 +162,7 @@ export const snacks = [
     datePublished: '2015-09-10',
     description:
       'This tutorial will guide you through building a full-stack Redux and Immutable-js application from scratch. We\'ll go through all the steps of constructing a Node+Redux backend and a React+Redux frontend for a real-world application, using test-first development.',
-    category: ['react', 'node', 'webpack'],
+    category: ['driedFruit', 'node', 'webpack'],
   },
   {
     title: 'Let\'s Build: Instagram (With Ruby on Rails)',
@@ -170,7 +170,7 @@ export const snacks = [
     datePublished: '2015-06-30',
     description:
       'Follow along and together we\'ll build awesome applications that will build your competence through glorious repetition and embracing the skills that employers want.',
-    category: ['ror'],
+    category: ['chocolates'],
   },
   {
     title: 'How to build a Pinterest Clone in Rails 4',
@@ -178,6 +178,6 @@ export const snacks = [
     datePublished: '2014-09-27',
     description:
       'Week 4 of my 12 Web Apps in 12 Weeks. This week I built a Pinterest like application with users, pins, image uploading, and \'likes\'. ',
-    category: ['ror'],
+    category: ['chocolates'],
   },
 ];

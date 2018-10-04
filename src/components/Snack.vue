@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4><a href="item.url" {{ snack.title }}></a></h4>
+    <!-- <h4><a :href="item.url" {{ item.title }}></a></h4> -->
     <p class="meta">
       Published
       <span class="meta-bit"> {{ item.datePublished }}</span>

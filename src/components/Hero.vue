@@ -6,8 +6,8 @@
       <h1 class="text-center font-lazer tracking-wide text-5xl gradient-font mb-8">
         Slatarian Snacks
       </h1>
-      <h4 class="text-indigo-darker text-center uppercase tracking-wide text-base">
-        Vote for your favorite snacks.
+      <h4 class="text-indigo-darker font-sans text-center uppercase tracking-wide text-base">
+        Vote for your favorite snacks
       </h4>
 
     </div>
