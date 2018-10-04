@@ -1,7 +1,7 @@
 <template>
   <Transition name="swap" mode="out-in">
   <div class="snack-list">
-    <Snack class="snack" v-for="snack in snacks" :item="snack" :key="snack" />
+    <Snack class="snack" v-for="snack in snacks" :item="snack" :key="snack.id" />
   </div>
   </Transition>
 </template>

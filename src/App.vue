@@ -27,20 +27,22 @@ export default {
     return {
       snacks: [
         {
-          title: 'A Better Way to Learn Angular 2',
-          url: 'https://thinkster.io/tutorials/learn-angular-2',
-          datePublished: '2017-05-01',
+          id: 0,
+          title: 'Walnuts',
+          url: 'hello',
+          dateAdded: '2017-05-01',
           description:
-            'The de facto roadmap for learning Angular 2. This tutorial series will teach you Angular 2\'s fundamental concepts paired with real world examples, descriptions, and screencasts.',
+            'Oh, king eh? Very nice. And how\'d you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.',
           category: ['nuts'],
         },
         {
-          title: 'Building Real World, Production Quality Apps with React and Redux',
+          id: 1,
+          title: 'Chocolate Covered Mangos',
           url:
-            'https://thinkster.io/tutorials/build-a-real-world-react-redux-application',
-          datePublished: '2017-05-01',
+            'hello',
+          dateAdded: '2017-05-01',
           description:
-            'While most tutorials online cover the basics of React, Redux, and other tools individually, the purpose of this tutorial is to cover all of them in a cohesive manner.',
+            'Oh, king eh? Very nice. And how\'d you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.',
           category: ['driedFruit'],
         },
       ],
