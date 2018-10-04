@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-yellow-lightest">
     <TopBanner/>
     <Hero/>
     <Search v-model="searchTerm" />

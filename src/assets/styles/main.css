@@ -19,6 +19,15 @@
     src: url(../fonts/Lazer84.ttf);
 }
 
+@font-face {
+  font-family: aktiv-grotesk;
+}
+
+@font-face {
+  font-family: NoeDisplayBold;
+  src: url(../fonts/NoeDisplayBold.ttf);
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still

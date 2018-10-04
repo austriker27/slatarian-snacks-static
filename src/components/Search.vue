@@ -1,10 +1,10 @@
 <template>
-  <div class="my-16 w-1/2">
-    <div class="p-16 bg-grey flex flex-col">
-      <p class="text-center tracking-wide text-base uppercase text-white font-sans">
-        Search to your heart's content:
+  <div class="mb-16 flex justify-center">
+    <div class="p-4 bg-indigo-darker flex flex-col w-1/2">
+      <p class="text-center text-base text-white font-aktiv">
+        
       </p>
-      <input type ="search" class="border border-indigo-blue" v-model="searchTerm" placeholder="Search" :name="name">
+      <input type ="search" class="border border-indigo-blue font-aktiv rounded" v-model="searchTerm" placeholder="Search names and descriptions" :name="name">
 
     </div>
   </div>

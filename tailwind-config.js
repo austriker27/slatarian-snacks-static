@@ -191,10 +191,18 @@ module.exports = {
   */
 
   fonts: {
+    NoeDisplayBold: [
+      "NoeDisplayBold",
+      "serif"
+    ],
+    aktiv: [
+      "aktiv-grotesk",
+      "sans-serif"
+    ],
     lazer: [
       "lazer", 
       "sans-serif"
-  ],
+    ],
     sans: [
       "system-ui",
       "BlinkMacSystemFont",

@@ -1,5 +1,7 @@
 <template>
-  <span label="label" :style="{ backgroundColor: color }"> {{ text }} </span>
+  <div>
+    <span class="rounded text-white font-aktiv font-semibold text-xs uppercase p-1" label="label" :style="{ backgroundColor: color }"> {{ text }} </span>
+  </div>
 </template>
 
 <script>
