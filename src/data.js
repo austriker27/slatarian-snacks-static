@@ -9,7 +9,7 @@ export const categories = {
 export const snacks = [
   {
     id: 1,
-    title: 'Snack',
+    title: 'Gummy Bear',
     url: 'https://indigoslate.com',
     dateAdded: '2017-05-01',
     description:

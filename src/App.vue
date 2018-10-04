@@ -2,8 +2,10 @@
   <div id="app">
     <TopBanner/>
     <Hero/>
-    <!-- <SnackCard/> -->
-    <SnackList :snacks="snacks"/>
+    <Search v-model="searchTerm" />
+    <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
+      <SnackList :snacks="snacks"/>
+    <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
   </div>
 </template>
 
@@ -11,50 +13,52 @@
 import '@/assets/styles/main.css';
 import Hero from './components/Hero';
 import TopBanner from './components/TopBanner';
-// import SnackCard from './components/SnackCard';
+import Pagination from './components/Pagination';
+import getArraySection from './utilities/get-array-section';
 import SnackList from './components/SnackList';
-import { snacks as snackData } from './data';
+import Search from './components/Search';
+import { snacks as snacksData } from './data';
 
 export default {
   name: 'App',
   components: {
     Hero,
     TopBanner,
-    // SnackCard,
+    Pagination,
     SnackList,
+    Search,
   },
-  // data() {
-  //   return {
-  //     snacks: [
-  //       {
-  //         id: 0,
-  //         title: 'Walnuts',
-  //         url: 'https://indigoslate.com',
-  //         dateAdded: '2017-05-01',
-  //         description:
-  //           'Oh, king eh? Very nice. And how\'d you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.',
-  //         category: ['nuts'],
-  //       },
-  //       {
-  //         id: 1,
-  //         title: 'Chocolate Covered Mangos',
-  //         url:
-  //           'https://indigoslate.com',
-  //         dateAdded: '2017-05-01',
-  //         description:
-  //           'Oh, king eh? Very nice. And how\'d you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.',
-  //         category: ['driedFruit'],
-  //       },
-  //     ],
-  //   };
-  // },
   data: () => ({
+    searchTerm: '',
     snacks: [],
+    page: 1,
   }),
+  computed: {
+    pageOfSnacks() {
+      return getArraySection(this.snacks, this.page, 10);
+    },
+  },
+  watch: {
+    searchTerm() {
+      this.filterSnacks();
+    },
+  },
   methods: {
     filterSnacks() {
-      // STUB... will actually add filtering later
-      this.snacks = snackData;
+      const searchTerm = this.searchTerm.toLowerCase();
+      let result = snacksData;
+
+      if (searchTerm) {
+        result = result.filter(snack => {
+          return (
+            snack.title.toLowerCase().search(searchTerm) >= 0 ||
+            snack.description.toLowerCase().search(searchTerm) >= 0
+          );
+        });
+      }
+
+      this.snacks = result;
+      this.page = 1;
     },
   },
   created() {

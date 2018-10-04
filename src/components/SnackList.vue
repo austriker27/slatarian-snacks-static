@@ -28,11 +28,11 @@ export default {
     padding: 20px;
   }
 
-  @media only screen and (min-width: 600px) {
+  /* @media only screen and (min-width: 600px) {
     .snack {
       width: 50%;
     }
-  }
+  } */
 
    /* VUE TRANSITION */
   .swap-enter-active, .swap-leave-active {
