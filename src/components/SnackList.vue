@@ -1,7 +1,7 @@
 <template>
   <transition name="swap" mode="out-in">
-    <div class="snack-list flex flex-col justify-center flex-wrap">
-      <Snack class="snack" v-for="snack in snacks" :item="snack" :key="snack.id" />
+    <div class="snack-list flex flex-col flex-wrap">
+      <Snack class="snack p-8 flex justify-center" v-for="snack in snacks" :item="snack" :key="snack.id" />
     </div>
   </transition>
 </template>
@@ -17,22 +17,7 @@ export default {
 </script>
 
 <style scoped>
-  /* .snack-list {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
-  } */
-
-  .snack {
-    padding: 20px;
-  }
-
-  /* @media only screen and (min-width: 600px) {
-    .snack {
-      width: 50%;
-    }
-  } */
+  
 
    /* VUE TRANSITION */
   .swap-enter-active, .swap-leave-active {

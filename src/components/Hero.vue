@@ -7,7 +7,7 @@
         <h1 class="text-center font-lazer tracking-wide text-5xl gradient-font mb-8 text-shadow-lg-white">
           Slatarian Snacks
         </h1>
-        <h4 class="text-outrun-green font-aktiv text-center uppercase tracking-wide text-base">
+        <h4 class="text-outrun-green font-aktiv text-center uppercase tracking-wide text-base text-light font-thin">
           Vote for your favorite snacks
         </h4>
 

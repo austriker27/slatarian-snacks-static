@@ -99,8 +99,8 @@
 
 .gradient-font {
   background: #544a7d;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #c42b28, #EE5B58, #fef492, #fddd30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #c42b28, #EE5B58, #fef492, #fddd30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #c42b28, #EE5B58, #fef492, #fddd30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #c42b28, #EE5B58, #fef492, #fddd30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
