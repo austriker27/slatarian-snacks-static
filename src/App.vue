@@ -1,8 +1,12 @@
 <template>
-  <div id="app" class="bg-yellow-lightest">
+  <div id="app" class="gradient-background">
     <TopBanner/>
-    <Hero/>
-    <Search v-model="searchTerm" />
+
+    <div class="hero-wrapper py-16">
+      <Hero/>
+      <Search v-model="searchTerm" />
+
+    </div>
     <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
       <SnackList :snacks="snacks"/>
     <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
@@ -73,5 +77,10 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0 auto;
+}
+
+.hero-wrapper {
+  background-image: url("./assets/images/outrun-background.jpg");
+  background-size: cover;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <transition name="swap" mode="out-in">
-    <div class="snack-list">
+    <div class="snack-list flex flex-col justify-center flex-wrap">
       <Snack class="snack" v-for="snack in snacks" :item="snack" :key="snack.id" />
     </div>
   </transition>
@@ -17,12 +17,12 @@ export default {
 </script>
 
 <style scoped>
-  .snack-list {
+  /* .snack-list {
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
-  }
+  } */
 
   .snack {
     padding: 20px;
