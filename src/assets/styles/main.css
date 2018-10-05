@@ -116,4 +116,10 @@ body {
 
 .gradient-background {
   background-image: linear-gradient(to top, #3a4187, #2c346a, #20284f, #161b34, #0c0d1c);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
