@@ -46,8 +46,8 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
 
   // outrun synthwave colors
-  outroGreen: "#09B87C",
-
+  "outrun-green": "#09B87C",
+  "outrun-pink": "#C711C4",
   // indigo slate brand colors
   // 5 is the middle, 1 is the lightest
   bodyCopy: "#3D3D3D",

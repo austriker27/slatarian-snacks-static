@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="rounded text-white font-aktiv font-semibold text-xs uppercase p-1" label="label" :style="{ backgroundColor: color }"> {{ text }} </span>
+    <span class="rounded text-indigo1 font-aktiv font-semibold text-xs uppercase p-1" label="label" :style="{ backgroundColor: color }"> {{ text }} </span>
   </div>
 </template>
 
