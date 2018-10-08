@@ -17,7 +17,7 @@
       </div>
       <div class="w-1/3 flex flex-col items-center content-center self-center align-middle p-4">
         <div class="">
-          <a v-on:click="counter += 1" id="vote-counter" class="text-outrun-green hover:text-green-dark">
+          <a @click="counterIncremeter()" id="vote-counter" class="text-outrun-green hover:text-green-dark">
             <svg class="h-12 w-12 fill-current inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 0h1v3l3 7v8a2 2 0 0 1-2 2H5c-1.1 0-2.31-.84-2.7-1.88L0 12v-2a2 2 0 0 1 2-2h7V2a2 2 0 0 1 2-2zm6 10h3v10h-3V10z"/></svg>
           </a>
           <p class="text-indigo5 font-bold text-sm font-aktiv">
@@ -34,23 +34,24 @@ import CategoryLabel from './CategoryLabel';
 
 const parser = document.createElement('a');
 
+
 export default {
   name: 'snack',
   props: ['item'],
+  data: () => ({
+    counter: 0,
+  }),
   components: { CategoryLabel },
   methods: {
     // eslint-disable-next-line
     domainOf: url => ((parser.href = url), parser.hostname.replace(/www\./, '')),
+    counterIncremeter: function() {
+      return this.counter++;
+    }
   },
 };
 </script>
 
-var voteCounter = new Vue({
-  el: '#vote-counter',
-  data: {
-    counter: 0
-  }
-})
 
 <style scoped>
 .snack-item {
