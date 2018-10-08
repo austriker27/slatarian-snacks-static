@@ -1,15 +1,18 @@
 <template>
-  <div id="app" class="gradient-background">
+  <div id="app">
     <TopBanner/>
 
     <div class="hero-wrapper py-16">
       <Hero/>
-      <Search v-model="searchTerm" />
 
     </div>
+    <div class="gradient-background stars twinkling clouds">
+      <Search v-model="searchTerm" />
     <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
-      <SnackList :snacks="snacks"/>
+      <SnackList :snacks="snacks"  />
     <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
+
+    </div>
   </div>
 </template>
 
@@ -77,6 +80,79 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0 auto;
+}
+
+  
+.stars, .twinkling, .clouds {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.stars {
+  background: #000 url(./assets/images/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background:transparent url(./assets/images/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+.clouds {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  background:#20284f url(./assets/images/clouds-red-yellow.png) repeat top center;
+  z-index: 3;
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
 }
 
 .hero-wrapper {

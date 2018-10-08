@@ -1,7 +1,7 @@
 <template>
-  <div class="flex justify-center">
-    <div class="p-4 bg-indigo8 flex flex-col w-1/2">
-      <p class="text-center text-base text-white font-aktiv">
+  <div class="flex justify-center w-full bg-outrun-green">
+    <div class="p-4 flex flex-col  w-5/6 md:w-2/5">
+      <p class="">
       </p>
       <input type ="search" class="border border-indigo-blue font-aktiv rounded" v-model="searchTerm" placeholder="Search names and descriptions" :name="name">
 
