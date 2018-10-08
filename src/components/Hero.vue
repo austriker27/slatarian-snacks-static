@@ -23,13 +23,21 @@
 }
 
 .rainbow-border {
-  border: 4px solid green;
-  -webkit-animation: rainbow 20s infinite alternate;
+  border: 4px solid #09B87C;
+  -webkit-animation: rainbow 20s infinite;
+  -webkit-animation: rainbow 20s infinite; /* Safari 4+ */
+  -moz-animation:    rainbow 20s infinite; /* Fx 5+ */
+  -o-animation:      rainbow 20s infinite; /* Opera 12+ */
+  animation:         rainbow 20s infinite; /* IE 10+, Fx 29+ */
 }
 
 .rainbow-border-faster {
-  border: 4px solid #434b9f;
-  -webkit-animation: rainbow 15s infinite alternate;
+  border: 4px solid #09B87C;
+  -webkit-animation: rainbow 15s infinite;
+  -webkit-animation: rainbow 15s infinite; /* Safari 4+ */
+  -moz-animation:    rainbow 15s infinite; /* Fx 5+ */
+  -o-animation:      rainbow 15s infinite; /* Opera 12+ */
+  animation:         rainbow 15s infinite; /* IE 10+, Fx 29+ */
 }
 
 @-webkit-keyframes rainbow {
@@ -46,4 +54,45 @@
   100% {border-color: #C711C4;}
 }
 
+@-moz-keyframes rainbow {
+  0% {border-color: #c42b28;}
+  10% {border-color: #EE5B58;}
+  20% {border-color: #09B87C;}
+  30% {border-color: #09B87C;}
+  40% {border-color: #434b9f;}
+  50% {border-color: #0c0d1c;}
+  60% {border-color: #353a73;}
+  70% {border-color: #9598cb;}
+  80% {border-color: #fddd30;}
+  90% {border-color: #fddd30;}
+  100% {border-color: #C711C4;}
+}
+
+@-o-keyframes rainbow {
+  0% {border-color: #c42b28;}
+  10% {border-color: #EE5B58;}
+  20% {border-color: #09B87C;}
+  30% {border-color: #09B87C;}
+  40% {border-color: #434b9f;}
+  50% {border-color: #0c0d1c;}
+  60% {border-color: #353a73;}
+  70% {border-color: #9598cb;}
+  80% {border-color: #fddd30;}
+  90% {border-color: #fddd30;}
+  100% {border-color: #C711C4;}
+}
+
+@keyframes rainbow {
+  0% {border-color: #c42b28;}
+  10% {border-color: #EE5B58;}
+  20% {border-color: #09B87C;}
+  30% {border-color: #09B87C;}
+  40% {border-color: #434b9f;}
+  50% {border-color: #0c0d1c;}
+  60% {border-color: #353a73;}
+  70% {border-color: #9598cb;}
+  80% {border-color: #fddd30;}
+  90% {border-color: #fddd30;}
+  100% {border-color: #C711C4;}
+}
 </style>
