@@ -42,7 +42,7 @@ export default {
     snacks: [],
     page: 1,
   }),
-  // using axios to access a DB and set the response back from the server to snacks
+  // using axios to make AJAX to a DB and set the response back from the server to snacks
   // mounted() {
   //   axios.get('/snacks').then(response => this.snacks = response.data);
   // },
