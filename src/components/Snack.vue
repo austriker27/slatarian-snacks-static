@@ -45,9 +45,9 @@ export default {
   methods: {
     // eslint-disable-next-line
     domainOf: url => ((parser.href = url), parser.hostname.replace(/www\./, '')),
-    counterIncremeter: function() {
-      return this.counter++;
-    }
+    counterIncremeter() {
+      return this.counter += 1;
+    },
   },
 };
 </script>

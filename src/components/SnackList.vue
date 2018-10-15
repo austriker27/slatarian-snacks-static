@@ -1,9 +1,9 @@
 <template>
-  <transition name="swap" mode="out-in">
-    <div class="snack-list flex flex-col flex-wrap">
+  <div class="snack-list flex flex-col flex-wrap">
+    <transition-group name="fade">
       <Snack class="snack p-8 flex justify-center" v-for="snack in snacks" :item="snack" :key="snack.id" />
-    </div>
-  </transition>
+    </transition-group>
+  </div>
 </template>
 
 <script>
@@ -17,19 +17,12 @@ export default {
 </script>
 
 <style scoped>
-  
-
-   /* VUE TRANSITION */
-  .swap-enter-active, .swap-leave-active {
-    transition: all .25s ease-in-out;
-  }
-  .swap-enter, .swap-leave-active {
-    opacity: 0;
-  }
-  .swap-enter {
-    transform: translateX(75px);
-  }
-  .swap-leave-to {
-    transform: translateX(-75px);
-  }
+/* VUE TRANSITION */
+.fade-enter-active, .fade-leave-active {
+  transition: all .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
 </style>

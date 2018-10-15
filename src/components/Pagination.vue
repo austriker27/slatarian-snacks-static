@@ -15,7 +15,7 @@
     </ul>
 
     <p v-show="parseInt(items)">{{ count }}}</p>
-
+    
   </div>
 </template>
 

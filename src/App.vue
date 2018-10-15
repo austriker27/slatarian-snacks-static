@@ -6,15 +6,15 @@
       <div class="stars"></div>
       <div class="twinkling"></div>
       <Hero/>
-
     </div>
+
     <div class="gradient-background">
       <Search v-model="searchTerm" />
-    <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
-      <SnackList :snacks="snacks"  />
-    <!-- <Pagination v-model="page" :items="snacks.length" :perPage="10"/> -->
-
+      <Pagination v-model="page" :items="snacks.length" :perPage="10"/>
+        <SnackList :snacks="snacks"  />
+      <Pagination v-model="page" :items="snacks.length" :perPage="10"/>
     </div>
+
   </div>
 </template>
 
@@ -42,6 +42,10 @@ export default {
     snacks: [],
     page: 1,
   }),
+  // using axios to access a DB and set the response back from the server to snacks
+  // mounted() {
+  //   axios.get('/snacks').then(response => this.snacks = response.data);
+  // },
   computed: {
     pageOfSnacks() {
       return getArraySection(this.snacks, this.page, 10);
@@ -77,15 +81,14 @@ export default {
 </script>
 
 <style scoped>
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0 auto;
-}
+/* #app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+} */
 
-  
-.stars, .twinkling, .clouds {
+.stars, .twinkling {
   position: absolute;
   top: 3rem;
   left: 0;
@@ -96,34 +99,7 @@ export default {
   display: block;
 }
 
-/* .stars {
-  background: #0A071C url(./assets/images/stars2.png) repeat top center;
-  z-index: 0;
-}
-
-.twinkling {
-  background:transparent url(./assets/images/twinklers2_2a.png) repeat top center;
-  z-index: 1;
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
-}
-.clouds {
-  background:transparent url(./assets/images/clouds-red-yellow.png) repeat top center;
-  z-index:3;
-  -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
-  -o-animation:move-clouds-back 200s linear infinite;
-  -webkit-animation:move-clouds-back 200s linear infinite;
-  animation:move-clouds-back 200s linear infinite;
-} */
-
 @keyframes move-twink-back {
-  /* from {opacity: 0, 0 0, 0 0;}
-  to {opacity: 100, 0 0, 0 0; }
-} */
   from {background-position:0 0, 0 0, 0 0;}
   to {background-position:-10000px 0, 0 0, 0 ;}
 }
@@ -139,30 +115,12 @@ export default {
   from {background-position:0 0, 0 0, 0 0;}
   to {background-position:-10000px 0, 0 0, 0 ;}
 }
-/* @keyframes move-clouds-back {
-  from {background-position:0 0, 0 0, 0 0;}
-  to {background-position:10000px 0, 0 0, 0 ;}
-}
-@-webkit-keyframes move-clouds-back {
-  from {background-position:0 0, 0 0, 0 0;}
-  to {background-position:10000px 0, 0 0, 0 ;}
-}
-@-moz-keyframes move-clouds-back {
-  from {background-position:0 0, 0 0, 0 0;}
-  to {background-position:10000px 0, 0 0, 0 ;}
-}
-@-ms-keyframes move-clouds-back {
-  from {background-position: 0;}
-  to {background-position:10000px 0, 0 0, 0 ;}
-} */
 
 .hero-wrapper {
   background-image: url("./assets/images/twinklers2_4b.png"), url("./assets/images/stars4.png"), url("./assets/images/outrun-background.jpg");
   background-repeat: repeat-x, repeat-x, no-repeat;
-  background-position: top center, top center; 
-   /* top center */
+  background-position: top center, top center;
   background-size: 100px, 100px, cover;
-  /* z-index: -2; */
   -moz-animation:none, move-twink-back 200s ease-in-out infinite, none;
   -ms-animation:none, move-twink-back 200s ease-in-out infinite, none;
   -o-animation:none, move-twink-back 200s ease-in-out infinite, none;
