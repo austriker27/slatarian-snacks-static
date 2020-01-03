@@ -19,6 +19,20 @@
     src: url(../fonts/Lazer84.ttf);
 }
 
+@font-face {
+  font-family: aktiv-grotesk;
+}
+
+@font-face {
+  font-family: NoeDisplayBold;
+  src: url(../fonts/NoeDisplayBold.ttf);
+}
+
+@font-face {
+  font-family: NoeTextbook;
+  src: url(../fonts/NoeTextBook.woff);
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
@@ -75,15 +89,18 @@
   text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08);
 }
 
+.text-shadow-lg-white {
+  text-shadow: 0 15px 30px rgba(255, 255, 255, 0.11), 0 5px 15px rgba(255, 255, 255,0.08);
+}
+
 .text-shadow-none {
   text-shadow: none;
 }
 
 .gradient-font {
   background: #544a7d;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #ffd452, #2f365f);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ffd452, #2f365f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: -webkit-linear-gradient(to top, #c42b28, #EE5B58, #fef492, #fddd30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #c42b28, #EE5B58, #fef492, #fddd30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -94,4 +111,15 @@
 
 body {
   margin: 0;
+}
+
+.gradient-background {
+  background-image: linear-gradient(to top, #3a4187, #2c346a, #20284f, #161b34, #0c0d1c);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
 }

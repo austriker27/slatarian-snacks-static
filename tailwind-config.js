@@ -44,8 +44,58 @@ View the full documentation at https://tailwindcss.com.
 */
 
 let colors = {
-  transparent: "transparent",
-  "indigo-blue": "#171931",
+
+  // outrun synthwave colors
+  "outrun-green": "#09B87C",
+  "outrun-pink": "#C711C4",
+  // indigo slate brand colors
+  // 5 is the middle, 1 is the lightest
+  bodyCopy: "#3D3D3D",
+
+  indigo1: "#e9eaf6",
+  indigo2: "#b6b8dd",
+  indigo3: "#9598cb",
+  indigo4: "#6569b0",
+  indigo5: "#434b9f",
+  indigo6: "#3a4187",
+  indigo7: "#353a73",
+  indigo8: "#2d3059",
+  indigo9: "#25263d",
+  indigo10: "#151623",
+  indigo11: "#0c0d1c",
+
+  red1: "#feeae9",
+  red2: "#fac3c1",
+  red3: "#f7a3a1",
+  red4: "#f48884",
+  red5: "#EE5B58",
+  red6: "#e24d49",
+  red7: "#d8423d",
+  red8: "#cf3731",
+  red9: "#c42b28",
+
+  yellow1: "#fefad2",
+  yellow2: "#fdf8c0",
+  yellow3: "#fdf7b2",
+  yellow4: "#fef5a6",
+  yellow5: "#fef492",
+  yellow6: "#fdec6f",
+  yellow7: "#fde34b",
+  yellow8: "#fddd30",
+  yellow9: "#fcd20d",
+
+  cyan05: "#ecfbff",
+  cyan1: "#def2f7",
+  cyan2: "#bfe6ef",
+  cyan3: "#a9deea",
+  cyan4: "#92d6e5",
+  cyan5: "#6fc8da",
+  cyan6: "#53bfd4",
+  cyan7: "#3cb7cf",
+  cyan8: "#29b0ca",
+  cyan9: "#00a6c5",
+
+  // tailwind colors
 
   black: "#22292f",
   "grey-darkest": "#3d4852",
@@ -191,10 +241,22 @@ module.exports = {
   */
 
   fonts: {
+    NoeTextbook: [
+      "NoeTextbook",
+      "serif"
+    ],
+    NoeDisplayBold: [
+      "NoeDisplayBold",
+      "serif"
+    ],
+    aktiv: [
+      "aktiv-grotesk",
+      "sans-serif"
+    ],
     lazer: [
       "lazer", 
       "sans-serif"
-  ],
+    ],
     sans: [
       "system-ui",
       "BlinkMacSystemFont",

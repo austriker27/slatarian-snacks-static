@@ -18,14 +18,14 @@ module.exports = {
 
     }),
 
-    purgecss({
+    // purgecss({
 
-      content: [
-        "./src/**/*.html",
-        "./src/**/*.vue"
-      ]
+    //   content: [
+    //     "./src/**/*.html",
+    //     "./src/**/*.vue"
+    //   ]
 
-    })
+    // })
 
   ]
 
